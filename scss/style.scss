@@ -104,7 +104,7 @@ section {
     height: 4px;
     @include gradient;
     margin-top: 35px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   &__discr {
@@ -400,8 +400,8 @@ section {
   }
 }
 
-// Section Lending
-.lending {
+// Section Landing
+.landing {
   padding-top: 60px;
   padding-bottom: 100px;
 
@@ -424,7 +424,7 @@ section {
 }
 
 @media only screen and (max-width : 991px) {
-  .lending {
+  .landing {
     padding-top: 60px;
     padding-bottom: 80px;
 
@@ -439,7 +439,7 @@ section {
 }
 
 @media only screen and (max-width : 767px) {
-  .lending {
+  .landing {
     padding-top: 50px;
     padding-bottom: 60px;
 
@@ -454,7 +454,7 @@ section {
 }
 
 @media only screen and (max-width : 576px) {
-  .lending {
+  .landing {
     padding-bottom: 50px;
 
     .section-heading {
@@ -473,17 +473,112 @@ section {
   }
 }
 
+// Section About Us
+.about-us {
+  padding-top: 125px;
+  padding-bottom: 110px;
+  background: #f0f0f0;
+
+  &-block {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+
+    &__info {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      text-align: left;
+
+      .section-heading__discr {
+        width: 92%;
+      }
+
+      .mymind-btn {
+        min-width: 305px;
+        margin-top: 65px;
+      }
+    }
+
+    &__img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
+  .about-us {
+    padding-top: 100px;
+    padding-bottom: 90px;
 
+    &-block {
+      &__info {
+
+        .section-heading__discr {
+          width: 100%;
+        }
+
+        .mymind-btn {
+          min-width: 300px;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .about-us {
+    padding-top: 80px;
+    padding-bottom: 70px;
 
+    &-block {
+      &__info {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+
+        .section-heading__discr {
+          width: 90%;
+        }
+
+        .mymind-btn {
+          min-width: 250px;
+          margin-top: 40px;
+        }
+      }
+
+      &__img {
+        display: none;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .about-us {
+    padding-top: 60px;
+    padding-bottom: 50px;
 
+    &-block {
+      &__info {
+        .mymind-btn {
+          min-width: 220px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
