@@ -478,3 +478,104 @@ section {
   font-size: 24px;
   font-weight: 400;
 }
+
+@media only screen and (max-width: 1199px) {
+  .banner {
+    margin-top: 40px;
+    padding-top: 190px;
+    padding-bottom: 120px;
+  }
+  .banner .section-heading {
+    margin-bottom: 50px;
+  }
+  .banner .section-heading__ttl {
+    font-size: 42px;
+  }
+  .banner .section-heading h3 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .banner .section-heading__line {
+    margin-bottom: 30px;
+  }
+  .banner .section-heading__discr {
+    width: 70%;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .banner {
+    margin-top: 20px;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    background-attachment: scroll;
+  }
+  .banner .section-heading {
+    margin-bottom: 40px;
+  }
+  .banner .section-heading__ttl {
+    font-size: 36px;
+  }
+  .banner .section-heading h3 {
+    font-size: 26px;
+    margin-top: 15px;
+  }
+  .banner .section-heading__line {
+    margin-bottom: 20px;
+  }
+  .banner .section-heading__discr {
+    width: 75%;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner {
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  .banner .section-heading {
+    margin-bottom: 30px;
+  }
+  .banner .section-heading__ttl {
+    font-size: 32px;
+  }
+  .banner .section-heading h3 {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  .banner .section-heading__line {
+    margin-bottom: 20px;
+  }
+  .banner .section-heading__discr {
+    width: 85%;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .banner {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .banner .section-heading {
+    margin-bottom: 30px;
+  }
+  .banner .section-heading__ttl {
+    font-size: 28px;
+  }
+  .banner .section-heading h3 {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  .banner .section-heading__line {
+    margin-bottom: 15px;
+  }
+  .banner .section-heading__discr {
+    width: 95%;
+    font-size: 14px;
+  }
+}

@@ -280,19 +280,124 @@ section {
 }
 
 @media only screen and (max-width : 1199px) {
+  .banner {
+    margin-top: 40px;
+    padding-top: 190px;
+    padding-bottom: 120px;
 
+    .section-heading {
+      margin-bottom: 50px;
+
+      &__ttl {
+        font-size: 42px;
+      }
+
+      h3 {
+        font-size: 30px;
+        margin-top: 20px;
+      }
+
+      &__line {
+        margin-bottom: 30px;
+      }
+
+      &__discr {
+        width: 70%;
+        font-size: 22px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .banner {
+    margin-top: 20px;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    background-attachment: scroll;
 
+    .section-heading {
+      margin-bottom: 40px;
+
+      &__ttl {
+        font-size: 36px;
+      }
+
+      h3 {
+        font-size: 26px;
+        margin-top: 15px;
+      }
+
+      &__line {
+        margin-bottom: 20px;
+      }
+
+      &__discr {
+        width: 75%;
+        font-size: 18px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .banner {
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-bottom: 70px;
 
+    .section-heading {
+      margin-bottom: 30px;
+
+      &__ttl {
+        font-size: 32px;
+      }
+
+      h3 {
+        font-size: 22px;
+        margin-top: 15px;
+      }
+
+      &__line {
+        margin-bottom: 20px;
+      }
+
+      &__discr {
+        width: 85%;
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
+  .banner {
+    margin-top: 0px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 
+    .section-heading {
+      margin-bottom: 30px;
+
+      &__ttl {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 22px;
+        margin-top: 15px;
+      }
+
+      &__line {
+        margin-bottom: 15px;
+      }
+
+      &__discr {
+        width: 95%;
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 
