@@ -832,3 +832,110 @@ section {
     font-size: 14px;
   }
 }
+
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 130px;
+  background: #f0f0f0;
+}
+
+.portfolio .section-heading__ttl {
+  margin-bottom: 20px;
+}
+
+.portfolio .section-heading__line {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.portfolio-block {
+  margin-top: 50px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.portfolio-block__item {
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
+}
+
+.portfolio-block__item a img {
+  width: 360px;
+  height: 415px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  .portfolio .section-heading__ttl {
+    margin-bottom: 20px;
+  }
+  .portfolio .section-heading__line {
+    margin-top: 30px;
+  }
+  .portfolio-block {
+    margin-top: 50px;
+  }
+  .portfolio-block__item a img {
+    width: 300px;
+    height: 370px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+  .portfolio .section-heading__ttl {
+    margin-bottom: 20px;
+  }
+  .portfolio .section-heading__line {
+    margin-top: 30px;
+  }
+  .portfolio-block {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  .portfolio-block__item {
+    margin-top: 30px;
+  }
+  .portfolio-block__item a img {
+    width: 320px;
+    height: 390px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .portfolio .section-heading__ttl {
+    margin-bottom: 15px;
+  }
+  .portfolio .section-heading__line {
+    margin-top: 20px;
+  }
+  .portfolio-block {
+    margin-top: 10px;
+  }
+  .portfolio-block__item {
+    margin: 0 10px;
+    margin-top: 20px;
+  }
+  .portfolio-block__item a img {
+    width: 240px;
+    height: 310px;
+  }
+}

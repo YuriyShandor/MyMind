@@ -705,18 +705,144 @@ section {
 
 }
 
+// Section Portfolio
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 130px;
+  background: #f0f0f0;
 
+  .section-heading {
+    &__ttl {
+      margin-bottom: 20px;
+    }
+
+    &__line {
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  &-block {
+    margin-top: 50px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    &__item {
+      -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+              box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+
+      a {
+        img {
+          width: 360px;
+          height: 415px;
+        }
+      }
+    }
+  }
+}
 
 @media only screen and (max-width : 1199px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 100px;
 
+    .section-heading {
+      &__ttl {
+        margin-bottom: 20px;
+      }
+
+      &__line {
+        margin-top: 30px;
+      }
+    }
+
+    &-block {
+      margin-top: 50px;
+
+      &__item {
+        a {
+          img {
+            width: 300px;
+            height: 370px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 70px;
 
+    .section-heading {
+      &__ttl {
+        margin-bottom: 20px;
+      }
+
+      &__line {
+        margin-top: 30px;
+      }
+    }
+
+    &-block {
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      margin-top: 10px;
+
+      &__item {
+        margin-top: 30px;
+
+        a {
+          img {
+            width: 320px;
+            height: 390px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
 
+    .section-heading {
+      &__ttl {
+        margin-bottom: 15px;
+      }
+
+      &__line {
+        margin-top: 20px;
+      }
+    }
+
+    &-block {
+      margin-top: 10px;
+
+      &__item {
+        margin: 0 10px;
+        margin-top: 20px;
+
+        a {
+          img {
+            width: 240px;
+            height: 310px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
