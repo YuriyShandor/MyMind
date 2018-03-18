@@ -400,22 +400,77 @@ section {
   }
 }
 
+// Section Lending
+.lending {
+  padding-top: 60px;
+  padding-bottom: 100px;
 
+  &-block {
+    margin-top: 40px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
-@media only screen and (max-width : 1199px) {
-
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .lending {
+    padding-top: 60px;
+    padding-bottom: 80px;
 
+    &-block {
+      margin-top: 40px;
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .lending {
+    padding-top: 50px;
+    padding-bottom: 60px;
 
+    &-block {
+      margin-top: 30px;
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 576px) {
+  .lending {
+    padding-bottom: 50px;
 
+    .section-heading {
+      &__discr {
+        width: 95%;
+      }
+    }
+
+    &-block {
+      margin-top: 30px;
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
 }
 
 
