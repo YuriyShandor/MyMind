@@ -729,3 +729,106 @@ section {
     margin-top: 30px;
   }
 }
+
+.benefits {
+  padding-top: 105px;
+  padding-bottom: 140px;
+}
+
+.benefits-block {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.benefits-block__item {
+  margin-top: 210px;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.benefits-block__item img {
+  position: absolute;
+  top: -115px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.benefits-block__item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.benefits-block__item p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1199px) {
+  .benefits {
+    padding-top: 90px;
+    padding-bottom: 110px;
+  }
+  .benefits-block__item {
+    margin-top: 200px;
+  }
+  .benefits-block__item img {
+    top: -115px;
+  }
+  .benefits-block__item h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .benefits-block__item p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .benefits {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .benefits-block__item {
+    margin-top: 150px;
+  }
+  .benefits-block__item img {
+    -webkit-transform: translateX(-50%), scale(0.75);
+    transform: translateX(-50%), scale(0.75);
+    top: -100px;
+  }
+  .benefits-block__item h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .benefits-block__item p {
+    font-size: 14px;
+  }
+}
