@@ -1033,3 +1033,133 @@ section {
   margin-top: auto;
   min-width: 225px;
 }
+
+@media only screen and (max-width: 1199px) {
+  .pricing {
+    padding: 60px 0;
+  }
+  .pricing .section-heading__line {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .pricing-block {
+    margin-top: 50px;
+  }
+  .pricing-block__item {
+    border-radius: 10px;
+    padding-bottom: 35px;
+  }
+  .pricing-block__item-ttl {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px 10px 0 0;
+  }
+  .pricing-block__item-ttl h4 {
+    font-size: 24px;
+  }
+  .pricing-block__item-price {
+    margin-top: 30px;
+    font-size: 34px;
+  }
+  .pricing-block__item-services {
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+  .pricing-block__item-services li {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .pricing-block__item .mymind-btn {
+    min-width: 225px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .pricing {
+    padding: 60px 0;
+    background-attachment: scroll;
+  }
+  .pricing .section-heading__line {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .pricing-block {
+    margin-top: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .pricing-block__item-cover {
+    margin-top: 30px;
+  }
+  .pricing-block__item {
+    border-radius: 10px;
+    padding-bottom: 30px;
+  }
+  .pricing-block__item-ttl {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-radius: 10px 10px 0 0;
+  }
+  .pricing-block__item-ttl h4 {
+    font-size: 24px;
+  }
+  .pricing-block__item-price {
+    margin-top: 25px;
+    font-size: 30px;
+  }
+  .pricing-block__item-services {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .pricing-block__item-services li {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .pricing-block__item .mymind-btn {
+    min-width: 225px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricing {
+    padding: 50px 0;
+  }
+  .pricing .section-heading__line {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .pricing-block {
+    margin-top: 10px;
+  }
+  .pricing-block__item-cover {
+    margin-top: 30px;
+  }
+  .pricing-block__item {
+    border-radius: 10px;
+    padding-bottom: 30px;
+  }
+  .pricing-block__item-ttl {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+  .pricing-block__item-ttl h4 {
+    font-size: 22px;
+  }
+  .pricing-block__item-price {
+    margin-top: 20px;
+    font-size: 26px;
+  }
+  .pricing-block__item-services {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .pricing-block__item-services li {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .pricing-block__item .mymind-btn {
+    min-width: 200px;
+  }
+}
