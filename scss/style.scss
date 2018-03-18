@@ -1220,7 +1220,7 @@ section {
                 justify-content: space-between;
 
         input {
-          min-width: 345px;
+          min-width: 48%;
           padding: 15px 15px 15px 30px;
           border: none;
           border-radius: 10px;
@@ -1256,17 +1256,204 @@ section {
 }
 
 @media only screen and (max-width : 1199px) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 100px;
 
+    &-block {
+      margin-top: 90px;
+
+      &__item {
+        padding-top: 30px;
+        padding-bottom: 20px;
+
+        div {
+          span {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 30px;
+          }
+        }
+
+        &_devider {
+          width: 256px;
+          margin-top: 35px;
+          margin-bottom: 30px;
+        }
+      }
+
+      &__form {
+        padding-left: 15px;
+
+        .inputs {
+          width: 100%;
+
+          input {
+            min-width: 48%;
+            padding: 15px 15px 15px 30px;
+            font-size: 18px;
+          }
+        }
+
+        textarea {
+          margin-top: 22px;
+          margin-bottom: 35px;
+          height: 225px;
+          padding: 15px 15px 15px 30px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 75px;
 
+    &-block {
+      margin-top: 50px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+
+      &__item {
+        padding-top: 30px;
+        padding-bottom: 20px;
+
+        div {
+          span {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 30px;
+          }
+        }
+
+        &_devider {
+          width: 256px;
+          margin-top: 35px;
+          margin-bottom: 30px;
+        }
+      }
+
+      &__form {
+        margin-top: 50px;
+        padding-left: 15px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        .inputs {
+          width: 100%;
+
+          input {
+            min-width: 48%;
+            padding: 15px 15px 15px 30px;
+            font-size: 18px;
+          }
+        }
+
+        textarea {
+          margin-top: 22px;
+          margin-bottom: 35px;
+          height: 225px;
+          padding: 15px 15px 15px 30px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 767px) {
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 60px;
 
+    &-block {
+      margin-top: 50px;
+
+      &__item {
+        padding-top: 20px;
+        padding-bottom: 15px;
+
+        div {
+          img {
+            -webkit-transform: scale(0.7);
+                    transform: scale(0.7);
+          }
+
+          span {
+            font-size: 18px;
+            margin-top: 10px;
+          }
+        }
+
+        &_devider {
+          width: 250px;
+          margin-top: 20px;
+          margin-bottom: 15px;
+        }
+      }
+
+      &__form {
+        margin-top: 40px;
+        padding-left: 0px;
+
+        .inputs {
+          width: 100%;
+
+          input {
+            min-width: 48%;
+            padding: 10px 10px 10px 15px;
+            font-size: 16px;
+          }
+        }
+
+        textarea {
+          margin-top: 20px;
+          margin-bottom: 30px;
+          height: 150px;
+          padding: 10px 10px 10px 15px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
 
-@media only screen and (max-width : 576px) {
+@media only screen and (max-width : 490px) {
+  .contacts {
+    &-block {
+      &__item {
 
+        &_devider {
+          width: 220px;
+        }
+      }
+
+      &__form {
+        .inputs {
+          width: 100%;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+
+          input {
+            min-width: 100%;
+
+            &:nth-child(2) {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
