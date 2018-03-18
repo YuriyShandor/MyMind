@@ -117,6 +117,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .header-nav .nav-bar .nav-item {
@@ -129,7 +132,19 @@
   margin-left: 0;
 }
 
-.header-nav .nav-bar .nav-item::after {
+.header-nav .nav-bar .nav-item:last-child {
+  margin-left: 30px;
+}
+
+.header-nav .nav-bar .nav-item .nav-link {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.header-nav .nav-bar .nav-item .nav-link::after {
   margin: 0 auto;
   -webkit-transform: translateY(1px);
   transform: translateY(1px);
@@ -137,31 +152,38 @@
   display: block;
   width: 0;
   height: 2px;
-  background: #000;
+  background: -webkit-gradient(linear, left top, right top, from(#2fefc7), color-stop(#2feec5), color-stop(#3ed79c), to(#43ce8b));
+  background: linear-gradient(to right, #2fefc7, #2feec5, #3ed79c, #43ce8b);
   -webkit-transition: all, .3s;
   transition: all, .3s;
 }
 
-.header-nav .nav-bar .nav-item:hover::after {
+.header-nav .nav-bar .nav-item .nav-link:hover::after {
   width: 100%;
 }
 
-.header-nav .nav-bar .nav-item .nav-link {
-  padding: 0;
-  font-size: 20px;
-  font-weight: 600;
-  color: #000;
+.header-nav .nav-bar .nav-item .nav-link.active {
+  color: #43ce8b;
+}
+
+.header-nav .nav-bar .nav-item .nav-link.active::after {
+  width: 100%;
+}
+
+.header-nav .nav-bar .nav-item span {
+  font-size: 22px;
 }
 
 @media only screen and (max-width: 1199px) {
   .header-nav .nav-bar .nav-item {
-    margin-left: 50px;
+    margin-left: 40px;
   }
 }
 
 @media only screen and (max-width: 991px) {
   .nav-container {
     width: 100%;
+    padding: 0;
   }
   .nav-container .row {
     margin: 0;
@@ -189,6 +211,9 @@
     -webkit-transition: all, 0.5s;
     transition: all, 0.5s;
     position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     right: 50px;
   }
   .header-nav .toggler-icon div {
@@ -224,53 +249,66 @@
   .header-nav .nav-bar {
     display: none;
     position: absolute;
-    top: 30px;
+    top: 25px;
     left: 0;
     width: 100%;
     z-index: 10;
-    background: gray;
+    background: #fff;
   }
   .header-nav .nav-bar .nav-item {
     position: relative;
-    margin-left: 0;
-    padding-top: 20px;
+    margin-left: 0 !important;
+    padding: 10px 0;
     margin-bottom: 0;
     border-top: none;
-    padding-bottom: 20px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-transition: all, .3s;
     transition: all, .3s;
   }
-  .header-nav .nav-bar .nav-item::after {
-    content: '';
-    display: block;
-    width: 0;
-    margin: 0 auto;
-    height: 2px;
-    background: black;
-    -webkit-transition: all, 1.5s;
-    transition: all, 1.5s;
-  }
   .header-nav .nav-bar .nav-item:hover {
-    background: blue;
-  }
-  .header-nav .nav-bar .nav-item:hover::after {
-    width: 100%;
-  }
-  .header-nav .nav-bar .nav-item:hover .nav-link {
-    color: yellow;
+    background: #eee;
   }
   .header-nav .nav-bar .nav-item .nav-link {
-    color: #fff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: #000;
     text-align: center;
     -webkit-transition: all, .3s;
     transition: all, .3s;
   }
+  .header-nav .nav-bar .nav-item span {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-nav .toggler-icon {
+    right: 30px;
+  }
+  .header-nav .nav-bar {
+    top: 20px;
+  }
+  .header-nav .nav-bar .nav-item {
+    padding: 5px 0;
+  }
+  .header-nav .nav-bar .nav-item .nav-link {
+    font-size: 16px;
+  }
+  .header-nav .nav-bar .nav-item span {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 567px) {
-  .header-nav .nav-bar .nav-item {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .header-nav .toggler-icon {
+    right: 20px;
   }
 }
 
@@ -291,4 +329,50 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  padding: 40px 0;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+
+.header .row {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1199px) {
+  .header {
+    padding: 35px 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header {
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    padding: 25px 0;
+  }
+}
+
+.banner {
+  padding: 500px 0;
+  background: #000;
 }
